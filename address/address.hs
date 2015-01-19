@@ -14,8 +14,10 @@ main = do
 	putStrLn "And the postal town?"
 	town <- getLine
 	
-	putStrLn "On envelopes, write:"
-	putStrLn first_name ++ last_name
+	putStrLn "On envelopes, write:\n"
+	putStrLn (first_name ++ " " ++ last_name)
+	putStrLn address
+	putStrLn (postal_code ++ " " ++ town)
 	
 	
 	
