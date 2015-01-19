@@ -1,20 +1,20 @@
 main = do {
-    --taking sides input
-	
-	putStrLn "Please enter the length of a"
-	a <- readLn
-	putStrLn "Please enter the length of b"
-	b <- readLn
-	
-	putStrLn "Please enter the length of c"
-	c <- readLn
-	
-	let checking :: Int -> Int -> Int -> String
-	checking a b c =
-		if (a^2 + b^2 == c^2 )
-			then (putStrLn "it is a right triangle")
 
-			else (putStrLn "it is not a right triangle")
-}
+	--taking sides input
 	
---rightTriangle.hs:4:9: Parse error in pattern: putStrLn
+	; putStrLn "Please enter the length of a"
+	; a <- readLn
+	; putStrLn "Please enter the length of b"
+	; b <- readLn
+	
+	; putStrLn "Please enter the length of c"
+	; c <- readLn
+	
+	; let checking :: Int -> Int -> Int -> IO ()
+	      checking a b c =
+		if (a^2 + b^2 == c^2 && c >= 1 && 1 <= b <= c)
+			then putStrLn "it is a right triangle"
+			else do putStrLn "it is not a right triangle"
+        ; checking a b c
+        ; return () 
+ }
