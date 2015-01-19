@@ -3,12 +3,12 @@ main = do
 	--taking sides input
 	
 	putStrLn "Please enter the length of a"
-	a <- getLine
+	a <- readLn
 	putStrLn "Please enter the length of b"
-	b <- getLine
+	b <- readLn
 	
 	putStrLn "Please enter the length of c"
-	c <- getLine
+	c <- readLn
 	
 	checking :: Int -> Int -> Int -> String
 	let checking a b c =
