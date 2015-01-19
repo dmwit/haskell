@@ -12,7 +12,7 @@ main = do {
 	
 	; let checking :: Int -> Int -> Int -> IO ()
 	      checking a b c =
-		if (a^2 + b^2 == c^2 && c >= 1 && 1 <= b <= c)
+		if (a^2 + b^2 == c^2 && c >= 1 && b >= 1 && b <= c && a >=1 && a <=b)
 			then putStrLn "it is a right triangle"
 			else do putStrLn "it is not a right triangle"
         ; checking a b c
