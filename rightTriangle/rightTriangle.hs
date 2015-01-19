@@ -11,11 +11,11 @@ main = do
 	putStrLn "Please enter the length of c"
 	c <- getLine
 	
+	let rightTriangle = [(a,b,c) |c <- [1..] , b <- [1..c] , a <- [1..b] , a^2 + b^2 == c^2]
 	checking :: Int -> String
 	checking a b c =
-	if c <- [1..] && b <- [1..c] && a <- [1..b] && a^2 + b^2 == c^2
+	if rightTriangle == True
 		then putStrLn "it is a right triangle"
 	
 	else putStrLn "it is not a right triangle"
 	
---rightTriangle.hs:15:24: parse error on input `='
