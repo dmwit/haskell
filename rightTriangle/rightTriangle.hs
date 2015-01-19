@@ -1,6 +1,5 @@
-main = do
-
-	--taking sides input
+main = do {
+    --taking sides input
 	
 	putStrLn "Please enter the length of a"
 	a <- readLn
@@ -16,5 +15,6 @@ main = do
 			then (putStrLn "it is a right triangle")
 
 			else (putStrLn "it is not a right triangle")
+}
 	
---rightTriangle.hs:14:24: parse error on input `='
+--rightTriangle.hs:4:9: Parse error in pattern: putStrLn
