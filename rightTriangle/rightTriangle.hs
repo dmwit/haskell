@@ -16,5 +16,4 @@ main = do {
 			then putStrLn ("it is a right triangle")
 			else do putStrLn ("it is not a right triangle")
         ; checking a b c
-        ; return () 
  }
