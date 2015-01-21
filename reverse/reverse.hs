@@ -5,3 +5,9 @@ main = do
 	a <- getLine
 	putStrLn (myLast a)
 
+-{
+runhaskell myLast.hs
+Please enter a list
+[1,2,3]
+]3,2,1[
+-}
