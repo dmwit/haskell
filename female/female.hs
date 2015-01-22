@@ -8,9 +8,9 @@ main = do
 	
 	--changing the input to uppercase for comparision
 	let uppercase :: String -> String
-		uppercase = map toUpper
+	    uppercase = map toUpper
 	
-		let uppercaseString = uppercase guess
+	let uppercaseString = uppercase guess
 	case uppercaseString of 
 		"CORTANA"	-> 	putStrLn "Nerd"
 		_			->	putStrLn "Tough luck"
