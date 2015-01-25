@@ -9,16 +9,8 @@ main = do
     num2	<-	getLine
 
     case operator of operation ->
-        "a" -> let newOp = "+"
+        let operation = "a" in (case operation of "a" -> (+); "s" -> (-); "m"-> (*))
         
-    let answer = show(num1) read(newOp) show(num2)
+    let answer = show(num1) operation show(num2)
     putStrLn("hello")
     
--{
-ghc --make "calculator.hs" (in directory: /home/mr-fool/Documents/haskell/calculator)
-[1 of 1] Compiling Main             ( calculator.hs, calculator.o )
-calculator.hs:12:9:
-    parse error (possibly incorrect indentation or mismatched brackets)
-Compilation failed.
-
--}
