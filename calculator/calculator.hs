@@ -15,5 +15,10 @@ main = do
     putStrLn("hello")
     
 -{
+ghc --make "calculator.hs" (in directory: /home/mr-fool/Documents/haskell/calculator)
 [1 of 1] Compiling Main             ( calculator.hs, calculator.o )
+calculator.hs:12:9:
+    parse error (possibly incorrect indentation or mismatched brackets)
+Compilation failed.
+
 -}
